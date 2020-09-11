@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Azar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./jogodeazar.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pedra</h1>
+        <h1>Papel</h1>
+        <h1>Tesoura</h1>
+    </header>
+
+    <main>
+        <div id="result"></div>
+
+        <section id="container">
+            <div id="options">
+                <ul>
+                    <li class="user">player</li>
+                    <li><img id="1" src="./imgs/pedra.png" alt="Pedra"></li>
+                    <li><img id="2" src="./imgs/papel.png" alt=""></li>
+                    <li><img id="3" src="./imgs/tesoura.png" alt=""></li>
+                </ul>
+            </div>
+
+            <h2 id="vs">VS</h2>
+
+            <div id="optionsComputer">
+                <ul>
+                    <li class="user">computador</li>
+                    <li><img id="computerPedra" src="./imgs/pedra.png" alt="Pedra"></li>
+                    <li><img id="computerPapel" src="./imgs/papel.png" alt=""></li>
+                    <li><img id="computerTesoura" src="./imgs/tesoura.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="./jogodeazar.js"></script>
+</body>
+
+</html>

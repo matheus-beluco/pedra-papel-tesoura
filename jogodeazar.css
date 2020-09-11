@@ -1,0 +1,132 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+/* CORPO */
+body {
+    font-family: 'Sriracha', cursive;
+    background-color: #EDE3FF;
+}
+
+/* HEADER */
+header {
+    background-color: #181818;
+}
+
+/* TITULO */
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+/* RESULTADO */
+#result {
+    height: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 25px;
+}
+
+/* CONTAINER DO CONTEUDO */
+#container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    background-color: #C8AAFF;
+    box-shadow: 2px 2px 3px;
+    border-radius: 7px;
+}
+
+/* JOGADORES */
+.user {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-bottom: 5px;
+    border-bottom: solid 3px #181818;
+    border-radius: 3px;
+    line-height: 20px;
+    background-color: #181818;
+    color: white;
+}
+
+/* PLAYER */
+#options {
+    margin: 8px;
+}
+
+#options img {
+    height: 120px;
+    border-radius: 80px;
+    border: solid 2px white;
+    filter: grayscale(100%);
+}
+
+#options img:hover {
+    filter: grayscale(0%) !important;
+}
+
+/* COMPUTADOR */
+#optionsComputer {
+    margin: 8px;
+}
+
+#optionsComputer img {
+    height: 120px;
+    border-radius: 80px;
+    border: solid 2px white;
+    filter: grayscale(100%);
+}
+
+/* VERSAO DESKTOP */
+@media screen and (min-width: 768px) {
+    /* HEADER */
+    header {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    /* TITULO */
+    h1 {
+        margin-left: 10px;
+    }
+    h1:nth-of-type(1)::after{
+        content: ",";
+    }
+    h1:nth-of-type(2)::after{
+        content: " e ";
+    }
+    h1:nth-of-type(3)::after{
+        content: ".";
+    }
+
+    /* CONTAINER DO CONTEUDO */
+    #container {
+        justify-content: space-around;
+        width: 800px;
+        margin: 0 auto;
+        border: solid 2px #181818;
+    }
+    /* RESULTADO */
+    #result {
+        width: 800px;
+        height: 45px;
+        margin: 0 auto 30px auto;
+        background-color: #181818;
+        border-radius: 7px;
+        line-height: 45px;
+    }
+}
